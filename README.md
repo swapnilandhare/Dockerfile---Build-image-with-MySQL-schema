@@ -1,9 +1,11 @@
 # Dockerfile---Build-image-with-MySQL-schema
-Steps to solve this assignment  -> 
+Steps to solve this assignment ->
+
 1> Create a test.sql file and dockerfile in a folder.
 
-2> Open terminal and type command.
-    1. docker build -t dockerfile. 	
+2> Open terminal and type command
+
+    1. docker build -t dockerfile 	
        (This command builds Docker image from docker file).
     2. docker images .
        (Using this command check the docker image is created or not).
@@ -21,15 +23,22 @@ Steps to solve this assignment  ->
        3. show tables;
        4. select * from studentData;
 
-DockerFile 
+DockerFile = 
 
 FROM mysql
+
 -> (it is the first command inside dockerfile. It defines image to start the build 	process.)
+
 ENV MYSQL_ROOT_PASSWORD=swapnil77
+
 ENV MYSQL_DATABASE=pucsdStudents
+
 ENV MYSQL_USER=pucsd 
+
 ENV MYSQL_PASSWORD=pucsd
+
 -> (ENV command is used to set envoirment variables for docker container.)
 
 COPY ./mysql/ /docker-entrypoint-initdb.d/
+
 -> (This command copies local files into docker container.in our case it copies 	mysql file to docker container.)
