@@ -1,12 +1,13 @@
 # Dockerfile---Build-image-with-MySQL-schema
 Steps to solve this assignment  -> 
 1> Create a test.sql file and dockerfile in a folder.
+
 2> Open terminal and type command.
-    1. docker build -t dockerfile 	
-       (This command builds Docker image from docker file)
-    2. docker images 
-       (Using this command check the docker image is created or not)
-    3. docker run -itd assignment2
+    1. docker build -t dockerfile. 	
+       (This command builds Docker image from docker file).
+    2. docker images .
+       (Using this command check the docker image is created or not).
+    3. docker run -itd assignment2.
        (This command is used for launch docker container)
     4. docker ps
        (Using this command we can see which containers are in running state)
